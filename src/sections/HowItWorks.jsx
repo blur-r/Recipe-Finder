@@ -20,25 +20,25 @@ function HowItWorks() {
 
                     <div className="step">
                         <div className="step-icon">
-                            <i class="fas fa-plus"></i>
+                            <i class="fas fa-search"></i>
                         </div>
                         <h2>
-                            Add Your Ingredients
+                            Get Matching Recipes
                         </h2>
                         <p>
-                            Simply type in the ingredients you have in your kitchen
+                            Our smart algorithm finds recipes that match your ingredients
                         </p>
                     </div>
 
                     <div className="step">
                         <div className="step-icon">
-                            <i class="fas fa-plus"></i>
+                            <i class="fas fa-utensils"></i>
                         </div>
                         <h2>
-                            Add Your Ingredients
+                            Start Cooking
                         </h2>
                         <p>
-                            Simply type in the ingredients you have in your kitchen
+                            Follow step by step instruction and enjoy your delicious meal
                         </p>
                     </div>
                 </div>
