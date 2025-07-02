@@ -1,5 +1,6 @@
 import { Routes, Route } from "react-router-dom";
 import Home from "./pages/Homee";
+import Recipedetails from "./pages/RecipeDetail";
 
 function App() {
     return (
@@ -8,6 +9,7 @@ function App() {
             <Route path="/search" />
             <Route path="/favorites" />
             <Route path="/recipe/:id" />
+            <Route path="/recipe/" element={<Recipedetails />} />
         </Routes>
     )
 }
