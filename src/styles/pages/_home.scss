@@ -117,6 +117,7 @@ header {
         width: 100vw;
         margin-top: 0;
         border-radius: 0;
+        padding: 0;
     }
 
     h1 {
@@ -136,6 +137,10 @@ header {
 
         @media (max-width :635px) {
             font-size: 25px;
+        }
+
+        @media (max-width:425px) {
+            font-size: 23px;
         }
     }
 
@@ -157,6 +162,10 @@ header {
 
         @media (max-width :635px) {
             font-size: 16px;
+        }
+
+        @media (max-width:425px) {
+            font-size: 14px;
         }
     }
 
