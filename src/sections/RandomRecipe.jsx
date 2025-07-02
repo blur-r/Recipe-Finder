@@ -12,18 +12,19 @@ function RandomRecipe() {
                         <h2>Spaghetti Bolognese  </h2>
                         <p>Random Recipe Card sits in between the homepage preview and full detail page in terms of content depth — it should feel engaging and informative, but still compact enough to fit in a homepage section that auto-refreshes.</p>
                         <div className="timer-serving">
-                            <p><i class="fas fa-stopwatch"></i> 25 Minutes</p>
+                            <p><i className="fas fa-stopwatch"></i> 25 Minutes</p>
                             -
-                            <p><i class="fas fa-utensils"></i> 5 Servings</p>
+                            <p><i className="fas fa-utensils"></i> 5 Servings</p>
                         </div>
                         <div className="random-recipe-buttons">
-                            <button className="random-recipe-button">Vegetarian</button>
-                            <button className="random-recipe-button">Vegan</button>
-                            <button className="random-recipe-button">Gluten-Free</button>
+                            <span className="tag">Vegetarian</span>
+                            <span className="tag">Vegan</span>
+                            <span className="tag">Gluten-Free</span>
+
                         </div>
                         <div className="last-container">
                             <button className="start-cooking">Start Cooking</button>
-                            <i class="fas fa-heart"></i>
+                            <i className="fas fa-heart"></i>
                         </div>
                     </div>
                 </div>

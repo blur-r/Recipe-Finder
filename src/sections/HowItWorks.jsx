@@ -8,7 +8,7 @@ function HowItWorks() {
                 <div className="steps">
                     <div className="step">
                         <div className="step-icon">
-                            <i class="fas fa-plus"></i>
+                            <i className="fas fa-plus"></i>
                         </div>
                         <h2>
                             Add Your Ingredients
@@ -20,7 +20,7 @@ function HowItWorks() {
 
                     <div className="step">
                         <div className="step-icon">
-                            <i class="fas fa-search"></i>
+                            <i className="fas fa-search"></i>
                         </div>
                         <h2>
                             Get Matching Recipes
@@ -32,7 +32,7 @@ function HowItWorks() {
 
                     <div className="step">
                         <div className="step-icon">
-                            <i class="fas fa-utensils"></i>
+                            <i className="fas fa-utensils"></i>
                         </div>
                         <h2>
                             Start Cooking

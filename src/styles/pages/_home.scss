@@ -296,6 +296,10 @@ header {
                 }
             }
         }
+
+        @media (max-width :500px) {
+            gap: 15px;
+        }
     }
 }
 
@@ -421,11 +425,13 @@ header {
                 gap: 5px;
 
 
-                .random-recipe-button {
-                    border: none;
-                    padding: 5px 10px;
-                    border-radius: 10px;
+                .tag {
                     background-color: #77CD74;
+                    color: #155724;
+                    padding: 5px 13px;
+                    border-radius: 15px;
+                    font-size: 12px;
+                    opacity: 0.8;
                 }
             }
 
@@ -446,6 +452,105 @@ header {
                     font-size: 30px;
                 }
             }
+        }
+    }
+}
+
+.popular-picks {
+    margin: 30px auto 0 auto;
+    width: 82vw;
+
+    @media (max-width :769px) {
+        width: 87vw;
+    }
+
+    h1 {
+        font-size: 30px;
+
+    }
+
+    .recipe-cards {
+        margin-top: 15px;
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+
+        .recipe-card {
+            width: 290px;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            background-color: #EAF8E2;
+
+            .recipe-image {
+                width: 100%;
+                height: auto;
+            }
+
+            .recipe-details {
+                padding: 10px;
+                background-color: #EAF8E2;
+            }
+
+            .tags {
+                display: flex;
+                gap: 10px;
+                margin-bottom: 10px;
+
+                .tag {
+                    background-color: #77CD74;
+                    color: #155724;
+                    padding: 5px 13px;
+                    border-radius: 15px;
+                    font-size: 12px;
+                    opacity: 0.8;
+                }
+            }
+
+            .title-time {
+                display: flex;
+                justify-content: space-between;
+            }
+
+            .title {
+                font-size: 20px;
+                font-weight: bold;
+                margin: 10px 0;
+            }
+
+            .time {
+                color: #6c757d;
+                font-size: 14px;
+                display: flex;
+                align-items: center;
+                gap: 5px;
+            }
+
+            .view-button {
+                display: block;
+                width: 100%;
+                padding: 8px;
+                background-color: $primary-color;
+                color: white;
+                text-align: center;
+                text-decoration: none;
+                border-radius: 10px;
+                margin-top: 10px;
+                font-weight: 600;
+                box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+            }
+
+            .view-button:hover {
+                background-color: #e0762a;
+            }
+
+            @media (max-width :500px) {
+                width: 100%;
+            }
+
         }
     }
 }
