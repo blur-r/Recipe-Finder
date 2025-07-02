@@ -1,4 +1,4 @@
-import Header from "../components/Header";
+import Header from "../components/Headerr";
 import Hero from "../sections/Hero";
 import HowItWorks from "../sections/HowItWorks";
 import RandomRecipe from "../sections/RandomRecipe";
