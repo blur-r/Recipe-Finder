@@ -13,6 +13,7 @@ function Home() {
             <RandomRecipe />
             <PopularPicks />
         </>
+
     )
 }
 
