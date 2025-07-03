@@ -3,16 +3,19 @@ import Home from "./pages/Homee";
 import Recipedetails from "./pages/RecipeDetail";
 import Favorites from "./pages/Favorites";
 import SearchResults from "./pages/SearchResults";
+import { AppProvider } from "./context/AppContext";
 
 function App() {
     return (
-        <Routes>
-            <Route path="/" element={<Home />} />
-            <Route path="/search" element={<SearchResults />} />
-            <Route path="/favorites" element={<Favorites />} />
-            <Route path="/recipe/:id" />
-            <Route path="/recipe/" element={<Recipedetails />} />
-        </Routes>
+        <AppProvider>
+            <Routes>
+                <Route path="/" element={<Home />} />
+                <Route path="/search" element={<SearchResults />} />
+                <Route path="/favorites" element={<Favorites />} />
+                <Route path="/recipe/:id" />
+                <Route path="/recipe/" element={<Recipedetails />} />
+            </Routes>
+        </AppProvider>
     )
 }
 

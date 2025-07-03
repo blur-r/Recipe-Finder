@@ -260,6 +260,10 @@ header {
             color: white;
         }
 
+        .active {
+            background-color: $primary-color;
+        }
+
         @media (max-width :425px) {
             padding: 2px 8px;
             border-radius: 15px;
@@ -502,6 +506,22 @@ header {
             overflow: hidden;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
             background-color: #EAF8E2;
+            position: relative;
+
+            .favorite-icon {
+                i {
+                    position: absolute;
+                    top: 10px;
+                    right: 10px;
+                    font-size: 20px;
+                }
+
+                .active {
+                    color: red;
+                }
+            }
+
+
 
             .recipe-image {
                 width: 100%;
