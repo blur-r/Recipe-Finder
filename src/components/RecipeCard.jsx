@@ -34,12 +34,14 @@ function RecipeCard({ recipe }) {
             <div className="recipe-details">
                 <div className="tags">
                     {tags.map((tag, index) => (
-                        <span key={index} className="tag">{tag}</span>
+                        <span key={index} className="tag">
+                            {tag.length > 12 ? `${tag.slice(0, 12)}...` : tag}
+                        </span>
                     ))}
                 </div>
 
                 <div className="title-time">
-                    <div className="title">{title}</div>
+                    <div className="title">{title.length > 22 ? `${title.slice(0, 22)}..` : title}</div>
                     <div className="time">
                         <p><i className="fas fa-stopwatch"></i> {readyInMinutes} Minutes</p>
                     </div>

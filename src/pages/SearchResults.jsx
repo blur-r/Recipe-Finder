@@ -1,25 +1,32 @@
 import { useRecipeContext } from '../context/AppContext';
-// import { useNavigate } from 'react-router-dom';
-// import { useEffect } from 'react';
+import RecipeCard from '../components/RecipeCard';
+// import Headerr from '../components/Headerr';
 
 
 // const navigate = useNavigate();
 
 function SearchResults() {
-    const { currentSearch, searchQuery } = useRecipeContext();
+    const { searchCache, searchQuery } = useRecipeContext();
 
     return (
         <>
-            <div className="results">
-                <h1>Showing recipes for: {searchQuery}</h1>
+            {/* <Headerr /> */}
+            <div className='con'>
+                <div className="results">
+                    <h1>Showing recipes for: {searchQuery ? searchQuery : 'your ingredients'}</h1>
+                </div>
 
+                <div className="results-container">
+                    {searchCache.length > 0 ? (
+                        searchCache.map((recipe) => (
+                            <RecipeCard key={recipe.id} recipe={recipe} />
+                        ))
+                    ) : (
+                        <p>No recipes found. Try searching for something else.</p>
+                    )}
+                </div>
             </div>
 
-            <div className="results-container">
-                {currentSearch.map(recipe => (
-                    <RecipeCard key={recipe.id} recipe={recipe} />
-                ))}
-            </div>
         </>
     )
 }

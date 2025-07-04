@@ -18,16 +18,16 @@ export const AppProvider = ({ children }) => {
         localStorage.setItem('favorites', JSON.stringify(favorites))
     }, [favorites])
 
-    const addToFavorites = (movie) => {
-        setFavorites(prev => [...prev, movie])
+    const addToFavorites = (recipe) => {
+        setFavorites(prev => [...prev, recipe])
     }
 
-    const removeFromFavorites = (movieId) => {
-        setFavorites(prev => prev.filter(movie => movie.id !== movieId))
+    const removeFromFavorites = (recipeId) => {
+        setFavorites(prev => prev.filter(recipe => recipe.id !== recipeId))
     }
 
-    const isFavorite = (movieId) => {
-        return favorites.some(movie => movie.id === movieId)
+    const isFavorite = (recipeId) => {
+        return favorites.some(recipe => recipe.id === recipeId)
     }
 
     const [popularRecipes, setPopularRecipes] = useState([])

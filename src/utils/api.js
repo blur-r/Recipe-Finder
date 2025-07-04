@@ -43,7 +43,9 @@ async function getRandomRecipes(number = 5) {
 }
 
 async function getRecipeDetails(id) {
-    const url = buildUrl(`/recipes/${id}/information`);
+    const url = buildUrl(`/recipes/${id}/information`, {
+        includeNutrition: true
+    });
 
     const response = await fetch(url);
     if (!response.ok) throw new Error('Failed to fetch recipe details');
@@ -52,7 +54,7 @@ async function getRecipeDetails(id) {
     return data;
 }
 
-async function getPopularRecipes(query = 'rice', number = 20) {
+async function getPopularRecipes(query = 'rice', number = 12) {
     const url = buildUrl('/recipes/complexSearch', {
         query,
         sort: 'popularity',

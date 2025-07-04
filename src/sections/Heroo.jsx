@@ -11,7 +11,7 @@ function Hero() {
     const {
         searchCache,
         cacheSearchResults,
-        setCurrentSearch,
+        setSearchCache,
         setSearchQuery,
     } = useRecipeContext();
 
@@ -34,14 +34,14 @@ function Hero() {
         const key = `${ingList.join(',')}:${diet || 'none'}`;
 
         if (searchCache[key]) {
-            setCurrentSearch(searchCache[key]);
+            setSearchCache(searchCache[key]);
             const formattedQuery = ingList.join(', ');
             setSearchQuery(formattedQuery);
             navigate('/search');
         } else {
             const results = await searchRecipes(ingList, diet);
             cacheSearchResults(key, results);
-            setCurrentSearch(results);
+            setSearchCache(results);
             const formattedQuery = ingList.join(', ');
             setSearchQuery(formattedQuery);
             navigate('/search');

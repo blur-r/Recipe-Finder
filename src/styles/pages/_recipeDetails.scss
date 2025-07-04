@@ -23,6 +23,12 @@ $primary-color: #E48437;
             height: 500px;
             border-radius: 20px;
             object-fit: cover;
+
+            @media (max-width:425px) {
+                height: 350px;
+
+            }
+
         }
 
         button {
@@ -42,7 +48,7 @@ $primary-color: #E48437;
     }
 
     .recipe-detail {
-        width: 70vw;
+        width: 90vw;
         margin: 30px auto;
 
         h2 {
@@ -76,7 +82,7 @@ $primary-color: #E48437;
     }
 
     .Ingredients {
-        width: 70vw;
+        width: 90vw;
         margin: 30px auto;
 
         h2 {
@@ -91,7 +97,7 @@ $primary-color: #E48437;
     }
 
     .Instructions {
-        width: 70vw;
+        width: 90vw;
         margin: 30px auto;
 
         h2 {
@@ -101,7 +107,7 @@ $primary-color: #E48437;
     }
 
     .nutritions {
-        width: 70vw;
+        width: 90vw;
         margin: 30px auto;
         display: flex;
         justify-content: center;
@@ -112,8 +118,11 @@ $primary-color: #E48437;
         .nutrient {
             display: flex;
             flex-direction: column;
-            justify-content: space-between;
-            padding: 10px 20px;
+            justify-content: center;
+            padding-bottom: 8px;
+            width: 100px;
+            height: 70px;
+            align-items: center;
             background-color: $primary-color;
             color: white;
             text-align: center;
