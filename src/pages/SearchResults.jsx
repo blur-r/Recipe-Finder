@@ -1,6 +1,6 @@
 import { useRecipeContext } from '../context/AppContext';
 import RecipeCard from '../components/RecipeCard';
-// import Headerr from '../components/Headerr';
+import Headerr from '../components/Headerr';
 
 
 // const navigate = useNavigate();
@@ -10,7 +10,7 @@ function SearchResults() {
 
     return (
         <>
-            {/* <Headerr /> */}
+            <Headerr />
             <div className='con'>
                 <div className="results">
                     <h1>Showing recipes for: {searchQuery ? searchQuery : 'your ingredients'}</h1>
