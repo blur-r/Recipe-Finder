@@ -1,5 +1,7 @@
 import RecipeCard from "../components/RecipeCard";
 import { useRecipeContext } from "../context/AppContext";
+import Headerr from '../components/Headerr';
+
 
 function Favorites() {
 
@@ -9,6 +11,7 @@ function Favorites() {
 
     return (
         <>
+            <Headerr />
             <div className="fav">
                 <h1>
                     Favorites
