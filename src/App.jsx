@@ -5,7 +5,7 @@ import Favorites from "./pages/Favorites";
 import SearchResults from "./pages/SearchResults";
 import { AppProvider } from "./context/AppContext";
 import Headerr from "./components/Headerr";
-import Footer from "./components/Footer";
+import Footer from "./components/Footerr";
 
 function App() {
     return (
