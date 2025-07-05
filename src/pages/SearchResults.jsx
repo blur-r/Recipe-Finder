@@ -10,7 +10,7 @@ function SearchResults() {
 
     return (
         <>
-            <Headerr />
+
             <div className='con'>
                 <div className="results">
                     <h1>Showing recipes for: {searchQuery ? searchQuery : 'your ingredients'}</h1>

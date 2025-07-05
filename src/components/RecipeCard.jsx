@@ -43,7 +43,7 @@ function RecipeCard({ recipe }) {
                 <div className="title-time">
                     <div className="title">{title.length > 22 ? `${title.slice(0, 22)}..` : title}</div>
                     <div className="time">
-                        <p><i className="fas fa-stopwatch"></i> {readyInMinutes} Minutes</p>
+                        <p><i className="fas fa-stopwatch"></i> Ready in {readyInMinutes} Min</p>
                     </div>
                 </div>
 

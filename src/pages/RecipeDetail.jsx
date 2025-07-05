@@ -35,8 +35,8 @@ function RecipeDetails() {
 
     return (
         <>
-            <Header />
-            <div className="recipe-details">
+
+            <div className="recipe-details-page">
                 <h1>
                     {recipe.title}
                 </h1>
@@ -61,7 +61,7 @@ function RecipeDetails() {
                         <p>Dish Type</p>
                         <p>
                             {recipe.dishTypes && recipe.dishTypes.length > 4
-                                ? recipe.dishTypes.slice(0, 3).join(', ')
+                                ? recipe.dishTypes.slice(0, 2).join(', ')
                                 : recipe.dishTypes?.join(', ') || 'N/A'}
                         </p>
                     </div>
@@ -104,15 +104,15 @@ function RecipeDetails() {
                 <div className="nutritions">
                     <div className="nutrient">
                         <p>Calories</p>
-                        <span>{recipe.nutrition?.nutrients?.find(n => n.name === 'Calories')?.amount || 'N/A'}</span>
+                        <span>{recipe.nutrition?.nutrients?.find(n => n.name === 'Calories')?.amount || 'N/A'}kcal</span>
                     </div>
                     <div className="nutrient">
                         <p>Fat</p>
-                        <span>{recipe.nutrition?.nutrients?.find(n => n.name === 'Fat')?.amount || 'N/A'}</span>
+                        <span>{recipe.nutrition?.nutrients?.find(n => n.name === 'Fat')?.amount || 'N/A'}g</span>
                     </div>
                     <div className="nutrient">
                         <p>Protein</p>
-                        <span>{recipe.nutrition?.nutrients?.find(n => n.name === 'Protein')?.amount || 'N/A'}</span>
+                        <span>{recipe.nutrition?.nutrients?.find(n => n.name === 'Protein')?.amount || 'N/A'}g</span>
                     </div>
                 </div>
 

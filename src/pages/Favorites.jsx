@@ -11,7 +11,6 @@ function Favorites() {
 
     return (
         <>
-            <Headerr />
             <div className="fav">
                 <h1>
                     Favorites

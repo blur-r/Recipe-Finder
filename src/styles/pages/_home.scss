@@ -6,22 +6,24 @@ $primary-color: #E48437;
     box-sizing: border-box;
 }
 
+a {
+    color: black;
+    text-decoration: none;
+    font-style: italic;
+}
+
 body {
     background-color: #FEF9F4;
     padding: 0 30px;
     font-family: "Poppins", sans-serif;
 }
 
-button {
-    cursor: pointer;
+.main-content {
+    padding-top: 70px;
 }
 
-.app-name,
-.fav-header {
-    color: black;
-    text-decoration: none;
-    font-family: "Pacifico", cursive;
-    font-size: 36px;
+button {
+    cursor: pointer;
 }
 
 header {
@@ -33,9 +35,11 @@ header {
     margin-left: -30px;
     margin-right: -30px;
     padding: 0 30px;
-    // position: fixed;
+    position: fixed;
+    width: 100%;
+    background-color: #FEF9F4;
+    z-index: 10;
 
-    // z-index: 10;
 
     @media (max-width: 500px) {
         padding: 0 10px;
@@ -607,4 +611,16 @@ header {
 
         }
     }
+}
+
+footer {
+    margin-top: 20px;
+    margin-left: -30px;
+    margin-right: -30px;
+    padding: 0 30px;
+    width: 100vw;
+    height: 50px;
+    background-color: #B6DDA1;
+    text-align: center;
+    line-height: 50px;
 }

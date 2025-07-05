@@ -7,7 +7,6 @@ import PopularPicks from "../sections/PopularPicks";
 function Home() {
     return (
         <>
-            <Header />
             <Hero />
             <HowItWorks />
             <RandomRecipe />

@@ -4,16 +4,22 @@ import RecipeDetails from "./pages/RecipeDetail";
 import Favorites from "./pages/Favorites";
 import SearchResults from "./pages/SearchResults";
 import { AppProvider } from "./context/AppContext";
+import Headerr from "./components/Headerr";
+import Footer from "./components/Footer";
 
 function App() {
     return (
         <AppProvider>
-            <Routes>
-                <Route path="/" element={<Home />} />
-                <Route path="/search" element={<SearchResults />} />
-                <Route path="/favorites" element={<Favorites />} />
-                <Route path="/recipe/:id" element={<RecipeDetails />} />
-            </Routes>
+            <Headerr />
+            <main className="main-content">
+                <Routes>
+                    <Route path="/" element={<Home />} />
+                    <Route path="/search" element={<SearchResults />} />
+                    <Route path="/favorites" element={<Favorites />} />
+                    <Route path="/recipe/:id" element={<RecipeDetails />} />
+                </Routes>
+            </main>
+            <Footer />
         </AppProvider>
     )
 }
