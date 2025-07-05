@@ -60,9 +60,9 @@ function RecipeDetails() {
                     <div className="flex">
                         <p>Dish Type</p>
                         <p>
-                            {recipe.dishTypes && recipe.dishTypes.length > 4
-                                ? recipe.dishTypes.slice(0, 2).join(', ')
-                                : recipe.dishTypes?.join(', ') || 'N/A'}
+                            {recipe.dishTypes?.length
+                                ? recipe.dishTypes.slice(0, 3).join(', ')
+                                : 'N/A'}
                         </p>
                     </div>
 
