@@ -40,15 +40,18 @@ function RecipeDetails() {
                 <h1>
                     {recipe.title}
                 </h1>
-                <p dangerouslySetInnerHTML={{ __html: recipe.summary }}></p>
-                <div className="img-btn">
-                    <img src={recipe.image} alt={recipe.title} />
-                    <button onClick={() => {
-                        isFav ? removeFromFavorites(recipe.id) : addToFavorites(recipe);
-                    }}>
-                        {isFav ? "Remove from Favorites" : "Add to Favorites"}
-                    </button>
+                <div className="det-img-text">
+                    <p dangerouslySetInnerHTML={{ __html: recipe.summary }}></p>
+                    <div className="img-btn">
+                        <img src={recipe.image} alt={recipe.title} />
+                        <button onClick={() => {
+                            isFav ? removeFromFavorites(recipe.id) : addToFavorites(recipe);
+                        }}>
+                            {isFav ? "Remove from Favorites" : "Add to Favorites"}
+                        </button>
+                    </div>
                 </div>
+
 
                 <div className="recipe-detail">
                     <h2>Recipe Details</h2>
